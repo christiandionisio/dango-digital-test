@@ -1,5 +1,6 @@
 import { Button, Card, CardContent, CardMedia, Grid, TextField, Typography } from '@mui/material';
-import React, { FC, useState } from 'react'
+import React, { FC, useContext, useEffect, useState } from 'react'
+import { CartContext } from '../../context/cart/CartContext';
 import { IProduct } from '../../interfaces/product'
 
 interface Props {
@@ -8,9 +9,35 @@ interface Props {
 
 export const ProductCard: FC<Props> = ({product}) => {
 
-    const [quantity, setQuantity] = useState(product.quantity);
+    const [quantity, setQuantity] = useState(0);
     const [title, setTitle] = useState(product.title);
     const [titleLabelSize, settitleLabelSize] = useState(17);
+
+    const {addProductToCart} = useContext(CartContext);
+
+    const [tempCartProduct, setTempCartProduct] = useState<IProduct>({
+      _id: product._id,
+      image: product.image,
+      price: product.price,
+      title: product.title,
+      quantity: 0,
+    });
+
+    const onAddProduct = () => {
+      if (!tempCartProduct) return;
+
+      setQuantity(0);
+      
+      addProductToCart(tempCartProduct);
+    }
+
+    useEffect(() => {
+      setTempCartProduct({
+        ...tempCartProduct,
+        quantity
+      });
+    }, [quantity])
+    
 
   return (
     <Grid item xs={12} sm={6} md={4} lg={3}>
@@ -60,7 +87,7 @@ export const ProductCard: FC<Props> = ({product}) => {
                 {product.description}
               </Typography>
             </CardContent>
-            <Button variant='contained' sx={{mb: 1}} fullWidth>Add to cart</Button>
+            <Button variant='contained' sx={{mb: 1}} fullWidth onClick={onAddProduct}>Add to cart</Button>
             <Button  sx={{mb: 1}} fullWidth>Learn More</Button>
             <TextField fullWidth 
                 label="Title Edit" 

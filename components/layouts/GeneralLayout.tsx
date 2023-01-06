@@ -19,7 +19,7 @@ export const GeneralLayout: FC<Props> = ({children, title}) => {
         </nav>
 
         <main style={{
-            margin: '80px auto',
+            margin: '40px auto',
             maxWidth: '1440px',
             padding: '0px 30px'
         }}>

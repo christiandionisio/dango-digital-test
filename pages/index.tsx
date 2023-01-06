@@ -2,6 +2,7 @@
 import { GeneralLayout } from '../components/layouts/GeneralLayout'
 import { IProduct } from '../interfaces/product'
 import { ProductList } from '../components/products/ProductList'
+import { CartProducts } from '../components/cart/CartProducts'
 
 const products: IProduct[] = [
   {
@@ -65,7 +66,10 @@ const products: IProduct[] = [
 export default function Home() {
   return (
     <GeneralLayout title='Test'>
-      <ProductList products={products}/>
+      <>
+        <ProductList products={products} />
+        <CartProducts />
+      </>
     </GeneralLayout>
   )
 }
