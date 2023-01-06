@@ -18,7 +18,7 @@ const products: IProduct[] = [
     title: "Tourmaline & Argon Oil Bar Soap", 
     description: "Recharge your skin with the super energizing power of finely crushed tourmaline powder blended with natural complexion",
     image: "https://cdn.shopify.com/s/files/1/0272/4714/9155/products/aactaril-soap_1200x1200.jpg?v=1622098133",
-    price: 12.00,
+    price: 19.00,
     quantity: 0
   },
   {
@@ -26,7 +26,7 @@ const products: IProduct[] = [
     title: "Tourmaline & Tea Tree Bar Soap", 
     description: "Recharge your skin with the super energizing power of finely crushed tourmaline powder blended with natural complexion",
     image: "https://cdn.shopify.com/s/files/1/0272/4714/9155/products/aactaril-soap_1200x1200.jpg?v=1622098133",
-    price: 12.00,
+    price: 10.00,
     quantity: 0
   },
   {
@@ -42,7 +42,7 @@ const products: IProduct[] = [
     title: "Tourmaline & Tea Tree 2 Bar Soap", 
     description: "Recharge your skin with the super energizing power of finely crushed tourmaline powder blended with natural complexion",
     image: "https://cdn.shopify.com/s/files/1/0272/4714/9155/products/aactaril-soap_1200x1200.jpg?v=1622098133",
-    price: 12.00,
+    price: 11.00,
     quantity: 0
   },
   {
@@ -50,7 +50,7 @@ const products: IProduct[] = [
     title: "Tourmaline & Unscented 2 Bar Soap", 
     description: "Recharge your skin with the super energizing power of finely crushed tourmaline powder blended with natural complexion",
     image: "https://cdn.shopify.com/s/files/1/0272/4714/9155/products/aactaril-soap_1200x1200.jpg?v=1622098133",
-    price: 12.00,
+    price: 8.00,
     quantity: 0
   },
   {
@@ -58,7 +58,7 @@ const products: IProduct[] = [
     title: "Tourmaline & Eucalyptus 2 Bar Soap", 
     description: "Recharge your skin with the super energizing power of finely crushed tourmaline powder blended with natural complexion",
     image: "https://cdn.shopify.com/s/files/1/0272/4714/9155/products/aactaril-soap_1200x1200.jpg?v=1622098133",
-    price: 12.00,
+    price: 15.00,
     quantity: 0
   }
 ]

@@ -9,7 +9,7 @@ export const OrderSummary = () => {
   return (
     <Grid container>
         <Grid item xs={6}>
-            <Typography>No. Productos</Typography>
+            <Typography>Products Quantity</Typography>
         </Grid>
         <Grid item xs={6} display='flex' justifyContent='end'>
             <Typography>{numberOfItems} products</Typography>

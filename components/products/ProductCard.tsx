@@ -25,6 +25,7 @@ export const ProductCard: FC<Props> = ({product}) => {
 
     const onAddProduct = () => {
       if (!tempCartProduct) return;
+      if (quantity === 0) return; 
 
       setQuantity(0);
       
@@ -78,7 +79,7 @@ export const ProductCard: FC<Props> = ({product}) => {
                       shrink: true,
                     }}
                     value={quantity}
-                    onChange={(event) => setQuantity(Number(event.target.value))}
+                    onChange={(event) => setQuantity((Number(event.target.value) < 0) ? 0 : Number(event.target.value))}
                   />
                 </Grid>
               </Grid>
