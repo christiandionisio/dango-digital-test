@@ -1,7 +1,9 @@
-import { Button, Card, CardContent, CardMedia, Grid, TextField, Typography } from '@mui/material';
+import { Box, Button, Card, CardContent, CardMedia, Grid, Slider, Stack, TextField, Typography } from '@mui/material';
 import React, { FC, useContext, useEffect, useState } from 'react'
 import { CartContext } from '../../context/cart/CartContext';
 import { IProduct } from '../../interfaces/product'
+import TextDecreaseIcon from '@mui/icons-material/TextDecrease';
+import TextIncreaseIcon from '@mui/icons-material/TextIncrease';
 
 interface Props {
     product: IProduct;
@@ -12,8 +14,13 @@ export const ProductCard: FC<Props> = ({product}) => {
     const [quantity, setQuantity] = useState(0);
     const [title, setTitle] = useState(product.title);
     const [titleLabelSize, settitleLabelSize] = useState(17);
+    const [value, setValue] = React.useState<number>(30);
 
     const {addProductToCart} = useContext(CartContext);
+
+    const handleChange = (event: Event, newValue: number | number[]) => {
+      setValue(newValue as number);
+    };
 
     const [tempCartProduct, setTempCartProduct] = useState<IProduct>({
       _id: product._id,
@@ -97,13 +104,21 @@ export const ProductCard: FC<Props> = ({product}) => {
                 onChange={(event) => setTitle(event.target.value)}
                 sx={{mb: 2}} 
             />
-            <TextField fullWidth 
-                label="Title Label Size Edit" 
-                id="titleLabelSizeEdit"
-                type="number"
-                value={titleLabelSize}
-                onChange={(event) => settitleLabelSize(Number(event.target.value))} 
-            />
+
+            <Box sx={{ m: 3 }} />
+              <Typography gutterBottom>Title label Size Edit</Typography>
+              <Stack spacing={2} direction="row" sx={{ mb: 1 }} alignItems="center">
+                <TextDecreaseIcon />
+                <Slider 
+                  min={5}
+                  max={30}
+                  aria-label="Title label Size Edit" 
+                  valueLabelDisplay="auto" 
+                  value={titleLabelSize}
+                  onChange={(_, value) => settitleLabelSize(value as number)}
+                />
+                <TextIncreaseIcon />
+              </Stack>
           </Card>
         </Grid>
   )
