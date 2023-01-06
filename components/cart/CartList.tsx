@@ -6,7 +6,9 @@ export const CartList = () => {
 
     const {cart} = useContext(CartContext);
 
-  return (
+  return (cart.length === 0) ? 
+    (<Typography>You must add products to cart</Typography>) 
+    : (
     <>
         {
             cart.map(product => (
