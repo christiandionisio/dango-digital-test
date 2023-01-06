@@ -9,55 +9,55 @@ const products: IProduct[] = [
     _id: "1", 
     title: "Tourmaline & Eucalyptus Bar Soap", 
     description: "Recharge your skin with the super energizing power of finely crushed tourmaline powder blended with natural complexion",
-    image: "https://cdn.dribbble.com/userupload/2837889/file/original-324b267be5f0f3fc0b7f1242872d6e3b.jpg",
+    image: "https://cdn.shopify.com/s/files/1/0272/4714/9155/products/aactaril-soap_1200x1200.jpg?v=1622098133",
     price: 12.00,
     quantity: 0
   },
   {
     _id: "2", 
-    title: "Tourmaline & Eucalyptus Bar Soap", 
+    title: "Tourmaline & Argon Oil Bar Soap", 
     description: "Recharge your skin with the super energizing power of finely crushed tourmaline powder blended with natural complexion",
-    image: "https://cdn.dribbble.com/userupload/2837889/file/original-324b267be5f0f3fc0b7f1242872d6e3b.jpg",
+    image: "https://cdn.shopify.com/s/files/1/0272/4714/9155/products/aactaril-soap_1200x1200.jpg?v=1622098133",
     price: 12.00,
     quantity: 0
   },
   {
     _id: "3", 
-    title: "Tourmaline & Eucalyptus Bar Soap", 
+    title: "Tourmaline & Tea Tree Bar Soap", 
     description: "Recharge your skin with the super energizing power of finely crushed tourmaline powder blended with natural complexion",
-    image: "https://cdn.dribbble.com/userupload/2837889/file/original-324b267be5f0f3fc0b7f1242872d6e3b.jpg",
+    image: "https://cdn.shopify.com/s/files/1/0272/4714/9155/products/aactaril-soap_1200x1200.jpg?v=1622098133",
     price: 12.00,
     quantity: 0
   },
   {
     _id: "4", 
-    title: "Tourmaline & Eucalyptus Bar Soap", 
+    title: "Tourmaline & Unscented Bar Soap", 
     description: "Recharge your skin with the super energizing power of finely crushed tourmaline powder blended with natural complexion",
-    image: "https://cdn.dribbble.com/userupload/2837889/file/original-324b267be5f0f3fc0b7f1242872d6e3b.jpg",
+    image: "https://cdn.shopify.com/s/files/1/0272/4714/9155/products/aactaril-soap_1200x1200.jpg?v=1622098133",
     price: 12.00,
     quantity: 0
   },
   {
     _id: "5", 
-    title: "Tourmaline & Eucalyptus Bar Soap", 
+    title: "Tourmaline & Tea Tree 2 Bar Soap", 
     description: "Recharge your skin with the super energizing power of finely crushed tourmaline powder blended with natural complexion",
-    image: "https://cdn.dribbble.com/userupload/2837889/file/original-324b267be5f0f3fc0b7f1242872d6e3b.jpg",
+    image: "https://cdn.shopify.com/s/files/1/0272/4714/9155/products/aactaril-soap_1200x1200.jpg?v=1622098133",
     price: 12.00,
     quantity: 0
   },
   {
     _id: "6", 
-    title: "Tourmaline & Eucalyptus Bar Soap", 
+    title: "Tourmaline & Unscented 2 Bar Soap", 
     description: "Recharge your skin with the super energizing power of finely crushed tourmaline powder blended with natural complexion",
-    image: "https://cdn.dribbble.com/userupload/2837889/file/original-324b267be5f0f3fc0b7f1242872d6e3b.jpg",
+    image: "https://cdn.shopify.com/s/files/1/0272/4714/9155/products/aactaril-soap_1200x1200.jpg?v=1622098133",
     price: 12.00,
     quantity: 0
   },
   {
     _id: "7", 
-    title: "Tourmaline & Eucalyptus Bar Soap", 
+    title: "Tourmaline & Eucalyptus 2 Bar Soap", 
     description: "Recharge your skin with the super energizing power of finely crushed tourmaline powder blended with natural complexion",
-    image: "https://cdn.dribbble.com/userupload/2837889/file/original-324b267be5f0f3fc0b7f1242872d6e3b.jpg",
+    image: "https://cdn.shopify.com/s/files/1/0272/4714/9155/products/aactaril-soap_1200x1200.jpg?v=1622098133",
     price: 12.00,
     quantity: 0
   }

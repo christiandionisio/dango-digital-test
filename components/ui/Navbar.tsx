@@ -43,7 +43,7 @@ export const Navbar = () => {
                             textDecoration: 'none',
                         }}
                     >
-                        LOGO
+                        TEST TASK
                     </Typography>
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -98,7 +98,7 @@ export const Navbar = () => {
                             textDecoration: 'none',
                         }}
                     >
-                        LOGO
+                        TEST TASK
                     </Typography>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                         {pages.map((page) => (
